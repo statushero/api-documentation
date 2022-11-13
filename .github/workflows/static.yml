@@ -20,12 +20,6 @@ concurrency:
   group: "pages"
   cancel-in-progress: true
 
-- name: Setup Ruby and install gems with caching
-      uses: ruby/setup-ruby@v1
-      with:
-        bundler-cache: true
-        # Uses .ruby-version
-
 jobs:
   # Single deploy job since we're just deploying
   deploy:
